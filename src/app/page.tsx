@@ -75,7 +75,7 @@ export default function HomePage() {
               {/* LOGO - SIGNATURE STYLE */}
               <div className="md:col-span-6">
                   <Link href="/" className="text-4xl md:text-5xl font-serif italic tracking-tighter block mb-8" aria-label="Halaman Utama KYY ART">
-                  kyy.<span className="not-italic font-sans font-bold text-sm uppercase tracking-widest ml-1">gallery</span>
+                  kyy.<span className="not-italic font-sans font-bold text-sm uppercase tracking-widest ml-1">art</span>
                   </Link>
                   <div className="max-w-xs">
                       <p className="text-zinc-410 text-sm leading-relaxed font-sans font-medium">Bespoke manual portrait sketches for the discerning collector from a private studio in <span className="text-zinc-950">Ogan Ilir, Sumatera Selatan.</span></p>

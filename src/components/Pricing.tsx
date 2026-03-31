@@ -49,7 +49,7 @@ export const Pricing = () => {
         </div>
 
         {/* PROCESS STEPS - STORYTELLING FLOW */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-32 mb-64 max-w-7xl mx-auto">
+        <div id="process" className="grid grid-cols-1 md:grid-cols-2 gap-32 mb-64 max-w-7xl mx-auto">
           {/* PRICE CARD - MINIMAL & CLEAN */}
           {plans.map((plan) => (
             <motion.div

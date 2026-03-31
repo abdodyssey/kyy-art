@@ -23,7 +23,7 @@ export const Navbar = () => {
           href="/" 
           className="text-2xl md:text-3xl font-serif italic tracking-tighter hover:opacity-70 transition-opacity"
         >
-          kyy.<span className="not-italic font-sans font-bold text-xs uppercase tracking-widest ml-1">gallery</span>
+          kyy.<span className="not-italic font-sans font-bold text-xs uppercase tracking-widest ml-1">art</span>
         </Link>
 
         {/* DESKTOP NAV - MINIMAL */}
