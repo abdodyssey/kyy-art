@@ -22,7 +22,7 @@ export const About = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-serif font-medium leading-[0.9] tracking-tighter text-zinc-950 mb-12"
+            className="text-4xl md:text-8xl font-serif font-medium leading-[0.9] tracking-tighter text-zinc-950 mb-12"
           >
             Kesabaran Adalah <br /> <span className="italic block mt-4">Kunci Proses.</span>
           </motion.h2>

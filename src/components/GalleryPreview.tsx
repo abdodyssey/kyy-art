@@ -14,7 +14,7 @@ export const GalleryPreview = () => {
           <span className="text-zinc-400 font-medium uppercase tracking-[0.4em] text-xs mb-6 block">
             The Selected Works
           </span>
-          <h2 className="text-6xl md:text-8xl font-serif font-medium leading-[0.9] tracking-tighter text-zinc-950">
+          <h2 className="text-4xl md:text-8xl font-serif font-medium leading-[0.9] tracking-tighter text-zinc-950">
             Capturing <br /> <span className="italic block mt-4 pr-12">Fine Details.</span>
           </h2>
         </div>
@@ -41,7 +41,7 @@ export const GalleryPreview = () => {
               className={`group block relative overflow-visible ${colSpan} ${mt}`}
             >
               {/* IMAGE CONTAINER - MINIMAL */}
-              <div className="relative overflow-hidden aspect-3/4 bg-zinc-100 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-700">
+              <div className="relative overflow-hidden aspect-3/4 bg-zinc-100 flex items-center justify-center grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-700">
                 <Image
                   src={art.image}
                   alt={`Sketsa Wajah Manual - ${art.title} oleh KYY ART`}
