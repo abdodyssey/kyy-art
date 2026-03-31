@@ -59,14 +59,14 @@ export const Pricing = () => {
               viewport={{ once: true }}
               className="relative p-12 md:p-16 border border-zinc-800 bg-zinc-950 flex flex-col items-start gap-12"
             >
-              <div className="w-full flex justify-between items-start">
-                <div>
-                  <h3 className="text-4xl font-serif font-bold mb-4 tracking-tighter">{plan.title}</h3>
+              <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8">
+                <div className="max-w-xs">
+                  <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 tracking-tighter leading-tight">{plan.title}</h3>
                   <p className="text-zinc-500 text-sm">{plan.description}</p>
                 </div>
-                <div className="flex flex-col items-end">
+                <div className="flex flex-col items-start md:items-end">
                     <span className="text-[10px] uppercase font-bold text-zinc-500 mb-2">Starts at</span>
-                    <span className="text-6xl font-serif text-white">{plan.price}</span>
+                    <span className="text-5xl md:text-6xl font-serif text-white line-clamp-1">{plan.price}</span>
                 </div>
               </div>
 
