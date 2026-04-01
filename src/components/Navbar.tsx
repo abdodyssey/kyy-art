@@ -27,13 +27,16 @@ export const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-in-out px-4 md:px-12 flex items-center justify-center border-b
-      ${isScrolled ? 'py-4 bg-transparent border-transparent' : 'h-24 bg-white/80 backdrop-blur-md md:bg-white border-zinc-100/50'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-in-out flex items-center justify-center
+      ${isScrolled 
+        ? 'h-16 bg-white border-b border-zinc-100 md:bg-transparent md:border-none md:h-auto md:py-4 px-0 md:px-12' 
+        : 'h-20 md:h-24 bg-white md:bg-white/80 backdrop-blur-md border-b border-zinc-100/50 px-6 md:px-12'}`}
     >
       <div 
         className={`max-w-[1400px] w-full mx-auto flex justify-between items-center transition-all duration-700 ease-in-out
-        ${isScrolled ? 'bg-white/90 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] py-2 px-8 rounded-full' : ''}`}
+        ${isScrolled ? 'md:bg-white/90 md:backdrop-blur-xl md:shadow-[0_8px_30px_rgb(0,0,0,0.04)] py-2 px-6 md:px-8 md:rounded-full' : 'px-0'}`}
       >
+
 
 
 
