@@ -14,16 +14,27 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0a",
+  themeColor: "#000000",
   width: "device-width",
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kyy.art"),
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "KyyArt",
+    statusBarStyle: "default",
+    capable: true,
+  },
   title: {
     default: "Jasa Sketsa Wajah Manual - KYY ART | Kado Unik & Lukis Wajah",
-    template: "%s | KYY ART"
+    template: "%s | KYY ART",
   },
+
   description: "Pesan jasa sketsa wajah manual & digital art untuk kado unik. KYY ART menghadirkan lukisan wajah berkualitas dari Muhammad Rizky, Ogan Ilir, Palembang.",
   keywords: ["jasa lukis wajah", "custom art", "kado unik", "digital painting", "sketsa wajah manual", "hadiah ulang tahun", "Ogan Ilir", "Palembang"],
   authors: [{ name: "Muhammad Rizky" }],
