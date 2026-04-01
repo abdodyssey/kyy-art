@@ -65,7 +65,10 @@ export const Navbar = () => {
           >
             Order
           </Link>
+          <Link href="/admin" className="w-px h-px opacity-0 flex items-center justify-center cursor-default" tabIndex={-1}>.</Link>
+
         </div>
+
 
 
         {/* MOBILE MENU TOGGLE */}
@@ -83,36 +86,85 @@ export const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className={`md:hidden absolute left-0 right-0 bg-white border-b border-zinc-100 shadow-2xl h-screen overflow-hidden ${isScrolled ? 'top-16 opacity-95' : 'top-24'}`}
-          >
+            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            animate={{ opacity: 1, backdropFilter: "blur(12px)" }}
+            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            className="fixed inset-0 z-100 bg-white/90 flex flex-col"
 
-            <div className="flex flex-col p-12 space-y-8 h-full bg-white">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-4xl font-serif tracking-tighter"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <div className="pt-12 border-t border-zinc-100">
+          >
+            {/* Header in Overlay */}
+            <div className="flex justify-between items-center px-6 h-24 border-b border-zinc-100">
+              <Link 
+                href="/" 
+                className="text-2xl font-serif italic tracking-tighter"
+                onClick={() => setIsOpen(false)}
+              >
+                kyy.<span className="not-italic font-sans font-bold text-xs uppercase tracking-widest ml-1">art</span>
+              </Link>
+              <button 
+                onClick={() => setIsOpen(false)}
+                className="w-11 h-11 flex items-center justify-center text-zinc-950"
+              >
+                <X strokeWidth={1.5} size={24} />
+              </button>
+            </div>
+
+            {/* Menu Links */}
+            <div className="flex-1 flex flex-col justify-center px-8 space-y-10">
+              <span className="text-[10px] uppercase font-bold text-zinc-400 tracking-[0.4em]">Index</span>
+              <div className="flex flex-col space-y-6">
+                {navLinks.map((link, i) => (
+                  <motion.div
+                    key={link.name}
+                    initial={{ x: -20, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <Link
+                      href={link.href}
+                      className="text-5xl font-serif tracking-tighter hover:italic transition-all inline-block"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="pt-12 border-t border-zinc-100 flex flex-col space-y-8">
                 <Link 
                   href={WHATSAPP_URL}
                   target="_blank"
-                  className="w-full bg-zinc-950 text-white px-6 py-6 text-sm uppercase tracking-widest font-bold block text-center"
+                  className="w-full bg-zinc-950 text-white py-6 rounded-full text-xs uppercase tracking-widest font-bold block text-center"
+                  onClick={() => setIsOpen(false)}
                 >
-                  Book A Commission
+                  Start Commission
                 </Link>
+                
+                <div className="grid grid-cols-2 gap-4">
+                   <div className="flex flex-col gap-2">
+                      <span className="text-[8px] uppercase font-bold text-zinc-400 tracking-widest">Social</span>
+                      <Link href="#" className="text-sm font-medium">Instagram</Link>
+                   </div>
+                   <div className="flex flex-col gap-2">
+                      <span className="text-[8px] uppercase font-bold text-zinc-400 tracking-widest">Contact</span>
+                      <Link href="#" className="text-sm font-medium">Email Studio</Link>
+                   </div>
+                </div>
               </div>
             </div>
+            
+            {/* Footer in Overlay */}
+            <div className="p-8 border-t border-zinc-50">
+               <p className="text-[8px] uppercase font-bold text-zinc-300 tracking-[0.2em]">
+                 <Link href="/admin" onClick={() => setIsOpen(false)}>©</Link> 2026 KYY.ART STUDIO
+               </p>
+            </div>
+
           </motion.div>
         )}
       </AnimatePresence>
     </nav>
   );
 };
+

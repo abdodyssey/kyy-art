@@ -103,10 +103,11 @@ export default function HomePage() {
               </div>
           </div>
 
-          <div className="max-w-[1400px] w-full mx-auto mt-48 pt-12 border-t border-zinc-50 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="max-w-[1400px] w-full mx-auto mt-48 pt-12 border-t border-zinc-50 flex flex-row justify-between items-center gap-8">
               <p className="text-zinc-300 text-[10px] uppercase font-bold tracking-[0.2em]">
-                  © 2026 KYY.ART. Semua Hak Cipta Dilindungi.
+                  <Link href="/admin" className="cursor-default">©</Link> 2026 KYY.ART. Semua Hak Cipta Dilindungi.
               </p>
+
               <button 
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-zinc-300 text-[10px] uppercase font-bold tracking-[0.2em] hover:text-zinc-950 transition-colors"
