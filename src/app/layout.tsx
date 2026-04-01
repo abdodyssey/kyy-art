@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -80,6 +81,7 @@ export default function RootLayout({
     >
       <body className="font-sans min-h-full flex flex-col bg-white text-zinc-950">
         {children}
+        <Toaster position="bottom-right" richColors theme="light" />
       </body>
     </html>
   );
