@@ -1,13 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { WHATSAPP_URL } from "@/constants/dummy";
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -72,53 +69,7 @@ export const Navbar = () => {
 
         </div>
 
-
-
-        {/* MOBILE MENU TOGGLE */}
-        <button
-          className="md:hidden w-11 h-11 flex items-center justify-center text-zinc-950 focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isOpen ? <X strokeWidth={1.5} size={24} /> : <Menu strokeWidth={1.5} size={24} />}
-        </button>
-
       </div>
-
-      {/* MOBILE NAV OVERLAY */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className={`md:hidden absolute left-0 right-0 bg-white border-b border-zinc-100 shadow-2xl h-screen overflow-hidden ${isScrolled ? 'top-16 opacity-95' : 'top-24'}`}
-          >
-
-            <div className="flex flex-col p-12 space-y-8 h-full bg-white">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-4xl font-serif tracking-tighter"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <div className="pt-12 border-t border-zinc-100">
-                <Link 
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  className="w-full bg-zinc-950 text-white px-6 py-6 text-sm uppercase tracking-widest font-bold block text-center"
-                >
-                  Book A Commission
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </nav>
   );
 };
