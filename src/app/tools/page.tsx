@@ -13,7 +13,7 @@ export default function ToolsPage() {
       <Navbar />
 
       {/* HERO SECTION - COMING SOON SCALE */}
-      <section className="min-h-[80vh] flex flex-col justify-center px-6 md:px-12 max-w-[1400px] mx-auto overflow-hidden">
+      <section className="min-h-[80vh] flex flex-col justify-center px-6 md:px-12 max-w-[1400px] mx-auto overflow-hidden pt-32 md:pt-48">
         <div className="max-w-4xl">
           <motion.span
             initial={{ opacity: 0, x: -10 }}
