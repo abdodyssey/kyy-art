@@ -49,7 +49,7 @@ export default function AdminPage() {
   };
 
   useEffect(() => {
-    const authStatus = localStorage.getItem("kyy_auth");
+    const authStatus = localStorage.getItem("kiky_auth");
     if (authStatus === "true") {
       setTimeout(() => {
         setIsAuthenticated(true);
@@ -62,7 +62,7 @@ export default function AdminPage() {
     e.preventDefault();
     if (password === ADMIN_PASSWORD) {
       setIsAuthenticated(true);
-      localStorage.setItem("kyy_auth", "true");
+      localStorage.setItem("kiky_auth", "true");
       fetchWorks();
       toast.success("Login Berhasil");
     } else {
@@ -161,13 +161,13 @@ export default function AdminPage() {
       <nav className="bg-white border-b border-zinc-100 px-4 sm:px-6 py-4 sm:py-6 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
           <div className="flex items-center gap-4">
-            <Link href="/" className="font-serif italic text-xl sm:text-2xl">kyy.art <span className="not-italic text-[8px] sm:text-[10px] uppercase font-bold text-zinc-400 ml-2 tracking-widest">Dashboard</span></Link>
+            <Link href="/" className="font-serif italic text-xl sm:text-2xl">kiky.art <span className="not-italic text-[8px] sm:text-[10px] uppercase font-bold text-zinc-400 ml-2 tracking-widest">Dashboard</span></Link>
           </div>
           <div className="flex items-center gap-4 sm:gap-6">
             <Link href="/" className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-zinc-950 transition-colors">Lihat Situs</Link>
             <button 
               onClick={() => {
-                localStorage.removeItem("kyy_auth");
+                localStorage.removeItem("kiky_auth");
                 setIsAuthenticated(false);
               }}
               className="flex items-center gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-red-500 hover:text-red-700 transition-colors"

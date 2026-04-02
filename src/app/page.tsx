@@ -20,7 +20,7 @@ export default function HomePage() {
       "name": "Muhammad Rizky",
       "brand": {
         "@type": "Brand",
-        "name": "KYY ART"
+        "name": "Kiky art"
       },
       "address": {
         "@type": "PostalAddress",
@@ -74,8 +74,8 @@ export default function HomePage() {
               
               {/* LOGO - SIGNATURE STYLE */}
               <div className="md:col-span-6">
-                  <Link href="/" className="text-4xl md:text-5xl font-serif italic tracking-tighter block mb-8" aria-label="Halaman Utama KYY ART">
-                  kyy.<span className="not-italic font-sans font-bold text-sm uppercase tracking-widest ml-1">art</span>
+                  <Link href="/" className="text-4xl md:text-5xl font-serif italic tracking-tighter block mb-8" aria-label="Halaman Utama Kiky art">
+                  kiky.<span className="not-italic font-sans font-bold text-sm uppercase tracking-widest ml-1">art</span>
                   </Link>
                   <div className="max-w-xs">
                       <p className="text-zinc-410 text-sm leading-relaxed font-sans font-medium">Bespoke manual portrait sketches for the discerning collector from a private studio in <span className="text-zinc-950">Ogan Ilir, Sumatera Selatan.</span></p>
@@ -98,14 +98,14 @@ export default function HomePage() {
               <div className="md:col-span-3 flex flex-col gap-6">
                   <span className="text-[10px] uppercase font-bold text-zinc-400 tracking-[0.2em] mb-4">Mulai Kolaborasi</span>
                   <Link href={WHATSAPP_URL} target="_blank" className="font-serif text-2xl tracking-tighter hover:italic" aria-label="Hubungi Muhammad Rizky via WhatsApp">Pesan via WhatsApp</Link>
-                  <Link href="#" className="font-serif text-2xl tracking-tighter hover:italic" aria-label="Follow KYY ART on Instagram">Instagram Portfolio</Link>
+                  <Link href="#" className="font-serif text-2xl tracking-tighter hover:italic" aria-label="Follow Kiky art on Instagram">Instagram Portfolio</Link>
                   <Link href="#" className="font-serif text-2xl tracking-tighter hover:italic" aria-label="Contact via Email">Email Studio</Link>
               </div>
           </div>
 
           <div className="max-w-[1400px] w-full mx-auto mt-48 pt-12 border-t border-zinc-50 flex flex-row justify-between items-center gap-8">
               <p className="text-zinc-300 text-[10px] uppercase font-bold tracking-[0.2em]">
-                  <Link href="/admin" className="cursor-default">©</Link> 2026 KYY.ART. Semua Hak Cipta Dilindungi.
+                  <Link href="/admin" className="cursor-default">©</Link> 2026 Kiky art. Semua Hak Cipta Dilindungi.
               </p>
 
               <button 

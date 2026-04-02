@@ -8,6 +8,6 @@ export const ART_WORKS = [
 ];
 
 const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6283844384983";
-const WA_MESSAGE = encodeURIComponent(process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || "Halo KYY ART, saya ingin memesan sketsa wajah.");
+const WA_MESSAGE = encodeURIComponent(process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || "Halo Kiky art, saya ingin memesan sketsa wajah.");
 
 export const WHATSAPP_URL = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;

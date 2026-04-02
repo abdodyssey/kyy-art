@@ -89,7 +89,7 @@ export const GalleryPreview = () => {
                 <div className="relative overflow-hidden aspect-3/4 bg-zinc-100 flex items-center justify-center grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-700">
                   <Image
                     src={art.image}
-                    alt={`Sketsa Wajah Manual - ${art.title} oleh KYY ART`}
+                    alt={`Sketsa Wajah Manual - ${art.title} oleh Kiky art`}
                     fill
                     priority={index === 0}
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -105,7 +105,7 @@ export const GalleryPreview = () => {
                   
                   {/* WATERMARK */}
                   <div className="absolute bottom-6 right-6 text-[10px] font-bold text-white/50 tracking-widest uppercase pointer-events-none select-none z-30">
-                    © KYY ART
+                    © Kiky art
                   </div>
                 </div>
 

@@ -40,7 +40,7 @@ export default function ToolsPage() {
           >
             <div className="w-12 h-px bg-zinc-200" />
             <p className="text-xl md:text-2xl text-zinc-500 font-sans leading-relaxed tracking-tight max-w-lg">
-                Tunggu tanggal mainnya. Kami akan segera <span className="text-zinc-950 font-medium">spill</span> seluruh senjata rahasia di balik setiap garis sketsa KYY ART di sini.
+                Tunggu tanggal mainnya. Kami akan segera <span className="text-zinc-950 font-medium">spill</span> seluruh senjata rahasia di balik setiap garis sketsa Kiky art di sini.
             </p>
           </motion.div>
 
@@ -60,7 +60,7 @@ export default function ToolsPage() {
       {/* MINIMAL FOOTER */}
       <footer className="py-24 px-6 md:px-12 border-t border-zinc-50 flex flex-col items-center bg-white">
           <div className="max-w-[1400px] w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-              <p className="text-zinc-300 text-[10px] uppercase font-bold tracking-[0.2em]">© 2026 KYY.ART.</p>
+              <p className="text-zinc-300 text-[10px] uppercase font-bold tracking-[0.2em]">© 2026 Kiky art.</p>
               <div className="flex gap-12">
                   <Link href={WHATSAPP_URL} className="text-zinc-400 text-[10px] uppercase font-bold tracking-[0.2em] hover:text-zinc-950 transition-colors">Order</Link>
                   <Link href="/#gallery" className="text-zinc-400 text-[10px] uppercase font-bold tracking-[0.2em] hover:text-zinc-950 transition-colors">Gallery</Link>

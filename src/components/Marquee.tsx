@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export const Marquee = () => {
-  const words = ["Bespoke Portaiture", "Hand-Drawn", "Graphite Excellence", "Manual Precision", "Personal Commissions", "2026 Studio", "Artisanal"];
+  const words = ["Kiky art", "Bespoke Portaiture", "Hand-Drawn", "Graphite Excellence", "Manual Precision", "Personal Commissions", "2026 Studio", "Artisanal"];
 
   return (
     <div className="relative py-12 md:py-20 bg-zinc-950 text-white overflow-hidden flex flex-nowrap border-y border-zinc-800">

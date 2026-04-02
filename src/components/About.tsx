@@ -38,7 +38,7 @@ export const About = () => {
                 &ldquo;Bagi saya, setiap wajah adalah pelajaran tentang detail yang tak pernah usai.&rdquo;
             </p>
             <p className="text-lg">
-                Dibalik KYY ART adalah <span className="text-zinc-950 font-bold">Muhammad Rizky</span>, seorang pelajar kelas 9 MTs asal Ogan Ilir, Palembang, yang mendedikasikan waktu diluar sekolah untuk mengasah ketajaman garis melalui sketsa wajah manual. 
+                Dibalik Kiky art is <span className="text-zinc-950 font-bold">Muhammad Rizky</span>, seorang pelajar kelas 9 MTs asal Ogan Ilir, Palembang, yang mendedikasikan waktu diluar sekolah untuk mengasah ketajaman garis melalui sketsa wajah manual. 
             </p>
             <p className="text-lg">
                 Berawal dari kecintaan pada media kertas dan pensil graphite, kini perjalanan kreatif saya mulai merambah ke dunia digital art. Setiap goresan adalah bukti proses belajar dan komitmen untuk menangkap karakter unik dari setiap subjek yang saya temui.
@@ -56,7 +56,7 @@ export const About = () => {
         >
           <div className="relative">
              <span className="text-[15vw] lg:text-[12vw] font-serif italic tracking-tighter text-zinc-950 block leading-none">
-                Kyy.
+                Kiky.
              </span>
              <div className="mt-8 flex flex-col items-center lg:items-end gap-2">
                 <span className="text-[10px] font-bold text-zinc-300 uppercase tracking-[0.4em]">Keaslian Goresan Tangan</span>
