@@ -93,15 +93,10 @@ export const GalleryPreview = () => {
                     fill
                     priority={index === 0}
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-1000 select-none pointer-events-none"
-                    draggable={false}
+                    className="object-cover group-hover:scale-105 transition-transform duration-1000"
                   />
                   
-                  {/* PROTECTIVE OVERLAY */}
-                  <div 
-                    className="absolute inset-0 z-20 cursor-default" 
-                    onContextMenu={(e) => e.preventDefault()}
-                  />
+                  {/* PROTECTIVE OVERLAY REMOVED */}
                   
                   {/* WATERMARK */}
                   <div className="absolute bottom-6 right-6 text-[10px] font-bold text-white/50 tracking-widest uppercase pointer-events-none select-none z-30">

@@ -31,7 +31,6 @@ h6 {
 html,
 body {
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   touch-action: manipulation;
 }
 
@@ -39,11 +38,10 @@ body {
   button,
   a {
     -webkit-tap-highlight-color: transparent; /* Hilangkan kotak abu-abu jelek di iOS */
-    @apply select-none; /* Matikan seleksi teks di UI element */
   }
 
   .ui-element {
-    @apply select-none;
+    /* Normal selection */
   }
 }
 
